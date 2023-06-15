@@ -1,0 +1,41 @@
+{
+  "extends": "@meslzy/tsconfig/react",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "rootDir": "source",
+    "baseUrl": "source",
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "~common/*": [
+        "./common/*"
+      ]
+    },
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "allowJs": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+    "source",
+    "vite.config.ts"
+  ],
+  "exclude": [
+    "dist"
+  ]
+}

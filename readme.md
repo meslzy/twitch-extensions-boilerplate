@@ -1,1 +1,1 @@
-# next-boilerplate
+# twitch-extensions-boilerplate

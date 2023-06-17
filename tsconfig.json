@@ -1,11 +1,6 @@
 {
   "extends": "@meslzy/tsconfig/react",
   "compilerOptions": {
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
     "jsx": "preserve",
     "lib": [
       "dom",

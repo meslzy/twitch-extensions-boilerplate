@@ -1,0 +1,11 @@
+# ide
+.idea/
+
+# node
+node_modules/
+
+# locks
+package-lock.json
+
+# build
+dist/

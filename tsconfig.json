@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "baseUrl": "source",
+    "rootDir": "source",
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "~api/*": [
+        "./api/*"
+      ],
+      "~app/*": [
+        "./app/*"
+      ],
+      "~context/*": [
+        "./context/*"
+      ],
+      "~pages/*": [
+        "./pages/*"
+      ]
+    },
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "source"
+  ],
+  "exclude": [
+    "dist"
+  ]
+}

@@ -7,22 +7,24 @@ import zipPack from "vite-plugin-zip-pack";
 
 import path from "path";
 
+const cwd = process.cwd();
+
 export default defineConfig({
   base: "./",
-  publicDir: path.join(process.cwd(), "public"),
-  root: path.join(process.cwd(), "source"),
+  publicDir: path.join(cwd, "public"),
+  root: path.join(cwd, "source"),
   build: {
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        config: path.join(process.cwd(), "source/config.html"),
-        panel: path.join(process.cwd(), "source/panel.html"),
-        mobile: path.join(process.cwd(), "source/mobile.html"),
-        video_overlay: path.join(process.cwd(), "source/video_overlay.html"),
-        video_component: path.join(process.cwd(), "source/video_component.html"),
+        config: path.join(cwd, "source/config.html"),
+        panel: path.join(cwd, "source/panel.html"),
+        mobile: path.join(cwd, "source/mobile.html"),
+        video_overlay: path.join(cwd, "source/video_overlay.html"),
+        video_component: path.join(cwd, "source/video_component.html"),
       },
       output: {
-        dir: path.join(process.cwd(), "dist"),
+        dir: path.join(cwd, "dist"),
       },
     },
   },
@@ -34,11 +36,11 @@ export default defineConfig({
     mkcert(),
     react(),
     tsconfigPaths({
-      root: process.cwd(),
+      root: cwd,
     }),
     zipPack({
-      inDir: path.join(process.cwd(), "dist"),
-      outDir: path.join(process.cwd(), "dist"),
+      inDir: path.join(cwd, "dist"),
+      outDir: path.join(cwd, "dist"),
     }),
   ],
 });

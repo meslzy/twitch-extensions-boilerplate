@@ -33,7 +33,7 @@ const TwitchProvider = (props: React.PropsWithChildren) => {
 
   React.useEffect(() => {
     Twitch.ext.onAuthorized((authorized) => {
-      setAuthorization(authorized.token, authorized.clientId);
+      setAuthorization(authorized.helixToken, authorized.clientId);
       setAuthorized(authorized);
     });
 

@@ -1,5 +1,6 @@
 {
   "name": "twitch-extensions-boilerplate",
+  "description": "A boilerplate for Twitch Extensions",
   "version": "0.0.1",
   "type": "module",
   "scripts": {
@@ -7,27 +8,27 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.3",
-    "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.15.10",
-    "@mui/material": "^5.15.10",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^5.16.7",
+    "@mui/material": "^5.16.7",
     "@types/twitch-ext": "^1.24.9",
-    "axios": "^1.6.7",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "axios": "^1.7.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "swr": "^2.2.5",
-    "zustand": "^4.5.1"
+    "zustand": "^4.5.4"
   },
   "devDependencies": {
-    "@types/node": "^20.11.20",
-    "@types/react": "^18.2.57",
-    "@types/react-dom": "^18.2.19",
-    "@vitejs/plugin-react": "^4.2.1",
-    "typescript": "^5.3.3",
-    "vite": "^5.1.4",
-    "vite-plugin-mkcert": "^1.17.3",
-    "vite-plugin-zip-pack": "^1.2.1",
-    "vite-tsconfig-paths": "^4.3.1"
+    "@types/node": "^22.3.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0",
+    "vite-plugin-mkcert": "^1.17.5",
+    "vite-plugin-zip-pack": "^1.2.4",
+    "vite-tsconfig-paths": "^5.0.1"
   },
   "private": true
 }
